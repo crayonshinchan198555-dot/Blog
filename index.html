@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to my blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        /* ================= GENERAL ================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f1ea;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background-color: #9dbbd9;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 45px;
+        }
+
+        /* ================= NAVIGATION ================= */
+
+        nav {
+            background-color: #9dbbd9;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 40px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f5f1ea;
+            transform: scale(1.1);
+        }
+
+        /* ================= CONTAINER ================= */
+
+        .container {
+            max-width: 1300px;
+
+            margin: auto;
+
+            padding: 25px;
+
+            display: flex;
+
+            gap: 25px;
+        }
+
+        /* ================= MAIN ================= */
+
+        main {
+            flex: 3;
+        }
+
+        /* ================= SIDEBAR ================= */
+
+        aside {
+            flex: 1;
+        }
+
+        /* ================= ARTICLES ================= */
+
+        article {
+            background-color: white;
+
+            padding: 25px;
+
+            margin-bottom: 25px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+            transition: 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+
+        article img {
+            width: 100%;
+
+            border-radius: 12px;
+
+            margin: 15px 0;
+        }
+
+        article h2 {
+            color: #6b8fb3;
+
+            margin-bottom: 10px;
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+
+        article time {
+            color: gray;
+            font-size: 14px;
+        }
+
+        blockquote {
+            background-color: #eef4fa;
+
+            padding: 15px;
+
+            border-left: 5px solid #6b8fb3;
+
+            border-radius: 8px;
+
+            margin-bottom: 15px;
+
+            font-style: italic;
+        }
+
+        /* ================= SIDEBAR BOX ================= */
+
+        aside section {
+            background-color: white;
+
+            padding: 20px;
+
+            margin-bottom: 25px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        aside h3 {
+            color: #6b8fb3;
+
+            margin-bottom: 15px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        aside a {
+            text-decoration: none;
+
+            color: #333;
+
+            transition: 0.3s;
+        }
+
+        aside a:hover {
+            color: #6b8fb3;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #9dbbd9;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 768px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================= HOME ================= -->
+
+    <header id="home">
+        <h1>My Personal Blog</h1>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <div class="container">
+
+        <!-- ================= BLOG ================= -->
+
+        <main id="blog">
+
+            <!-- Blog Post 1 -->
+            <article id="1">
+                <h2>My Vacation</h2>
+                <img src="./images/44017-Melaka-Historical-City.webp"
+                    alt="Travel scenery image">
+                <p>
+                    Last weekend, I went on a one-day one-night trip to
+                    <strong>A Famosa</strong>.
+                    It was an amazing experience filled with fun activities,
+                    relaxing moments, and unforgettable memories with friends and family.
+                </p>
+                <p>
+                    I would love to go again.
+                </p>
+                <time datetime="2024-05-18">
+                    18 May 2026
+                </time>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article id="2">
+                <h2>My Daily Coding Journey</h2>
+                <p>
+                    I have been learning
+                    <em>HTML and web development</em>
+                    recently.
+                </p>
+                <p>
+                    Practice is very important to improve coding skills.
+                </p>
+                <time datetime="2026-05-17">
+                    17 May 2026
+                </time>
+            </article>
+
+            <!-- Skill-->
+            <article id="3">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML Basics</li>
+                    <li>Python</li>
+                    <li>Basic Web Design</li>
+                    <li>Problem Solving</li>
+                    <li>Creative Thinking</li>
+                </ul>
+            </article>
+
+            <!-- Hobby -->
+            <article id="4">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Gaming 🎮</li>
+                    <li>Drawing 🎨</li>
+                    <li>Badminton 🏸</li>
+                    <li>Swimming 🏊‍♀️</li>
+                    <li>Exploring new food 🍜</li>
+                </ul>
+            </article>
+
+            <!-- Work -->
+            <article id="5">
+                <h3>Working Experience</h3>
+                <ul>
+                    <li>Private Tutor</li>
+                    <li>Cashier</li>
+                    <li>Receptionist</li>
+                    <li>Customer Service</li>
+                    <li>Online Sales Assistant</li>
+                    <li>Promoter</li>
+                </ul>
+            </article>
+
+</section>
+
+        </main>
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside id="about">
+
+            <section>
+                <h3>About Me</h3>
+                <p>
+                    Hello! I am a student who enjoys learning web development
+                    and exploring new technologies.
+                    My hobbies are gaming and drawing, which help me relax
+                    and express my creativity.
+                </p>
+                <p>
+                    During weekends, whenever I am free, I love spending time
+                    with my friends by playing badminton or going swimming.
+                    I also enjoy trying different kinds of food, especially
+                    sushi, Korean BBQ, and desserts.
+                </p>
+            </section>
+
+            <section>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#3">Skill</a></li>
+                    <li><a href="#4">Hobby</a></li>
+                    <li><a href="#5">Experience</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#1">My Vacation</a></li>
+                    <li><a href="#2">My Daily Coding Journey</a></li>
+                </ul>
+            </section>
+
+        </aside>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <p>
+            <strong>© 2026 My Personal Blog</strong>
+        </p>
+        <p>
+            Contact:
+                01121772471
+        </p>
+        <p>
+            Follow me on social media:
+            <a href="https://github.com/crayonshinchan198555-dot/Blog">
+                GitHub
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
